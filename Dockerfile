@@ -23,6 +23,11 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install lib32ncu
 
 # Setup Container
 
+ENV G_HOSTNAME="TF2 Server"
+ENV SV_PURE="1"
+ENV MAXPLAYERS="24"
+ENV MAP="koth_nucleus"
+
 ADD start-server.sh /start-server.sh
 EXPOSE 27015/udp
 
