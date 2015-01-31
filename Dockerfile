@@ -27,6 +27,7 @@ ENV G_HOSTNAME="TF2 Server"
 ENV SV_PURE="1"
 ENV MAXPLAYERS="24"
 ENV MAP="koth_nucleus"
+ENV PORT="27015"
 
 ADD start-server.sh /start-server.sh
 EXPOSE 27015/udp
